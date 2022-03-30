@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      font-family: 'Red Hat Text', sans-serif;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    h1{
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      padding: 10rem 0rem 3rem;
+      letter-spacing: .5rem;
+    }
+
+    .container{
+      background-image: url('./images/bg-stars.svg');
+      background-color: hsl(235, 16%, 14%);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .clock{
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: 50%;
+      margin: auto;
+      gap: 1rem;
+
+    }
+
+    .clock p{
+      opacity: 50%;
+    }
+
+    .socials{
+      background-image: url('./images/pattern-hills.svg');
+      text-align: center;
+      height: 27vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .socials img{
+      padding: 1rem;
+    }
+
+    .square{
+      width: 150px;
+      height: 140px;
+    }
+
+    .number{
+      color: hsl(345, 95%, 50%);
+      font-size: 5rem;
+      text-align: center;  
+      margin: -3.4rem 0rem -3.2rem 0rem;
+      z-index: 2;
+
+
+    }
+
+    .top, .bottom{
+      background-color: hsl(237, 18%, 59%);
+      height: calc(140px / 2);
+      border-radius: 10%;
+      z-index: 1;
+
+    }
+
+    .top{
+      opacity: 30%;
+
+    }
+
+    .bottom{
+      opacity: 70%;
+    }
+    .caption p{
+      text-align: center;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+
+    <div class="container">
+      <h1>We're launching soon</h1>
+
+      <div class="clock">
+
+        <div class="square days">
+          <div class="top"></div>
+          <div class="number">08</div>
+          <div class="bottom"></div>
+          <div class="caption">
+            <p>Days</p>
+          </div>
+        </div>
+
+        <div class="square hours">
+          <div class="top"></div>
+          <div class="number">23</div>
+          <div class="bottom"></div>
+          <div class="caption">
+            <p>Hours</p>
+          </div>
+        </div>
+
+        <div class="square days">
+          <div class="top"></div>
+          <div class="number">55</div>
+          <div class="bottom"></div>
+          <div class="caption">
+            <p>Minutes</p>
+          </div>
+        </div>
+
+
+        <div class="square days">
+          <div class="top"></div>
+          <div class="number">41</div>
+          <div class="bottom"></div>
+          <div class="caption">
+            <p>Seconds</p>
+          </div>
+        </div>
+
+       
+      </div>
+
+      <div class="socials">
+        <img src="./images/icon-facebook.svg" alt="">
+        <img src="./images/icon-pinterest.svg" alt="">
+        <img src="./images/icon-instagram.svg" alt="">
+      </div>
+    </div>
+  </main>
+
+  We're launching soon
+
+  Days
+  Hours
+  Minutes
+  Seconds
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
